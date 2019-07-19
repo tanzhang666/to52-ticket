@@ -9,7 +9,7 @@ import java.util.Date;
 public class Order implements Serializable {
     private Integer oid;
     private Integer ostate;
-    private Date dateOrder;
+    private String dateOrder;
     private Ticket ticket;
     private Client buyer;
 
@@ -27,11 +27,11 @@ public class Order implements Serializable {
     public void setOstate(Integer ostate) {
         this.ostate = ostate;
     }
-    public Date getDateOrder() {
+    public String getDateOrder() {
         return dateOrder;
     }
 
-    public void setDateOrder(Date dateOrder) {
+    public void setDateOrder(String dateOrder) {
         this.dateOrder = dateOrder;
     }
 

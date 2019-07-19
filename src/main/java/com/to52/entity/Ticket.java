@@ -2,7 +2,6 @@ package com.to52.entity;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.util.Date;
 
 /**
  * @author tzhang
@@ -14,10 +13,10 @@ public class Ticket implements Serializable {
     private Integer tstate;
     private String destination;
     private String departure;
-    private Date dateDepart;
-    private Date dateArrival;
-    private Date timeDepart;
-    private Date timeArrival;
+    private String dateDepart;
+    private String dateArrival;
+    private String timeDepart;
+    private String timeArrival;
     private String seatNumber;
     private String compartmentNumber;
     private BigDecimal price;
@@ -62,35 +61,35 @@ public class Ticket implements Serializable {
         this.departure = departure;
     }
 
-    public Date getDateDepart() {
+    public String getDateDepart() {
         return dateDepart;
     }
 
-    public void setDateDepart(Date dateDepart) {
+    public void setDateDepart(String dateDepart) {
         this.dateDepart = dateDepart;
     }
 
-    public Date getDateArrival() {
+    public String getDateArrival() {
         return dateArrival;
     }
 
-    public void setDateArrival(Date dateArrival) {
+    public void setDateArrival(String dateArrival) {
         this.dateArrival = dateArrival;
     }
 
-    public Date getTimeDepart() {
+    public String getTimeDepart() {
         return timeDepart;
     }
 
-    public void setTimeDepart(Date timeDepart) {
+    public void setTimeDepart(String timeDepart) {
         this.timeDepart = timeDepart;
     }
 
-    public Date getTimeArrival() {
+    public String getTimeArrival() {
         return timeArrival;
     }
 
-    public void setTimeArrival(Date timeArrival) {
+    public void setTimeArrival(String timeArrival) {
         this.timeArrival = timeArrival;
     }
     public String getSeatNumber() {

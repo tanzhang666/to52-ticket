@@ -284,7 +284,7 @@ public class TicketDO {
      *
      * @mbg.generated Fri May 24 23:54:05 CEST 2019
      */
-    public void setDatearrival(Date dateArrival) {
+    public void setDateArrival(Date dateArrival) {
         this.dateArrival = dateArrival;
     }
 
@@ -308,7 +308,7 @@ public class TicketDO {
      *
      * @mbg.generated Fri May 24 23:54:05 CEST 2019
      */
-    public void setTimedepart(Date timeDepart) {
+    public void setTimeDepart(Date timeDepart) {
         this.timeDepart = timeDepart;
     }
 

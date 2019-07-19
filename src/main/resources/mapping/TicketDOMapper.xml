@@ -73,17 +73,17 @@
     <include refid="Base_Column_List" />
     from ticket
     where tstate=0
-    <if test="destination!=null">
+    <if test="destination!=null and destination!=''" >
     AND destination=#{destination}
     </if>
-    <if test="departure!=null">
+    <if test="departure!=null and departure!=''">
       AND departure=#{departure}
     </if>
     <if test="dateDepart!=null">
-      AND dateDepart=#{dateDepart}
+      AND dateDepart>=#{dateDepart}
     </if>
-    <if test="timeDepart!=null">
-      AND timeDepart&lt;=#{timeDepart}
+    <if test="dateDepartTo!=null">
+      AND dateDepart &lt;= #{dateDepartTo}
     </if>
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
