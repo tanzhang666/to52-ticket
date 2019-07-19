@@ -1,0 +1,61 @@
+<!-- ������Ϣ -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<div class="row">
+			<div class="col-sm-9 ">
+				<h3>My information</h3>
+			</div>
+		</div>
+	</div>
+		</div>
+	<div class="panel-body">
+								<div class="form-group">
+							<input ng-model="Info.cid" type="hidden" id="Info_cid"/>
+							<input ng-model="Info.privilege" type="hidden" /> 
+							<label	class="col-sm-1 control-label">firstName</label>
+							<div class="col-sm-5">
+								<div class="col-md-7">																<!--afficher le nom-->
+									<input type="text" class="form-control" id="Info_firstName" disabled="disabled" required="required"
+										name="Info_firstName" ng-model="Info.firstName"
+										>
+								</div>
+							</div>
+							<label	class="col-sm-1 control-label">lastName</label>
+							<div class="col-sm-5">																		<!--afficher le prenom-->
+								<div class="col-md-7">
+									<input type="text" class="form-control" id="Info_lastName" disabled="disabled" required="required"
+										name="Info_lastName" ng-model="Info.lastName"
+										>
+								</div>
+							</div>
+							<label	class="col-sm-1 control-label">email</label>			<!--afficher le mail-->
+							<div class="col-sm-5">
+								<div class="col-md-7">
+									<input type="text" class="form-control" id="Info_email" disabled="disabled" required="required"
+										name="Info_email" ng-model="Info.email"
+										>
+								</div>
+							</div>
+							<label	class="col-sm-1 control-label">phone</label>			<!--afficher le numéro téléphone-->
+							<div class="col-sm-5">
+								<div class="col-md-7">
+									<input type="text" class="form-control" id="Info_phone" required="required"
+										name="Info_phone" ng-model="Info.phone"
+										>
+								</div>
+							</div>
+							<label	class="col-sm-1 control-label">address</label>
+							<div class="col-sm-11">
+								<div class="col-md-7">																	<!--afficher le adresse-->
+									<input type="text" class="form-control" id="Info_address" required="required"
+										    name="Info_address" ng-model="Info.address"
+										>
+								</div>
+							</div>
+			<br/></b>
+									<div role="presentation" style="text-align:center"><span class="btn btn-primary "
+							ng-click="submits();" >modifier</span></div>						<!--button du modifier-->
+		
+		<hr class="divider">
+	</div>
+</div>

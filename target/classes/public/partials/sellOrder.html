@@ -1,0 +1,47 @@
+<!-- my order -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<div class="row">
+			<div class="col-sm-9 ">
+				<h3>my selling order </h3>
+			</div>
+		</div>
+	</div>
+	<div class="panel-body scroll_bar">						<!-- Tableau montrant les ordres vendus -->
+		<table class="table">
+			<thead>
+				<tr>
+					<th style="width: 5%">orderID</th>
+					<th style="width: 11%">dateOrder</th>
+					<th style="width: 10%">ticketId</th>
+					<th style="width: 11%">departure</th>
+					<th style="width: 10%">destination</th>
+					<th style="width: 10%">dateDepart</th>
+					<th style="width: 10%">dateArrival</th>
+					<th style="width: 20%">orderState</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="x in orders">					<!-- Connectez au backend pour obtenir des donn¨¦es-->
+					<td>{{x.oid}}</td>
+					<td>{{x.dateOrder}}</td>
+					<td>{{x.ticket.tid}}</td>
+					<td>{{x.ticket.departure}}</td>
+					<td>{{x.ticket.destination}}</td>
+					<td>{{x.ticket.dateDepart}}</td>
+					<td>{{x.ticket.dateArrival}}</td>
+					<!-- V¨¦rifiez l'¨¦tat de la commande, ostate est ¨¦gal ¨¤ 1 pour que la commande attende la confirmation du vendeur et ¨¤ 2 pour la transaction.-->
+					<td ng-if="x.ostate===1"
+						style="color: blue"><span class="btn btn-info btn-sm" ng-click="confirm_order(x.oid,x.ticket.tid,x.ticket.seller.cid)"><i
+							class="glyphicon glyphicon-saved"></i> confirm </span>&emsp; <span
+						class='btn btn-success btn-sm' role="button"
+						ng-click="refuse_order(x.oid,x.ticket.tid,x.ticket.seller.cid)"><i
+							class="glyphicon glyphicon-remove"></i> refuse </span></td>
+					<td ng-if="x.ostate===2"
+						style="color: blue">Successful transaction</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+ <div ui-view="home" ></div>
+</div>

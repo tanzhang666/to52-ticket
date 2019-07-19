@@ -1,0 +1,78 @@
+<!-- search page -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<div class="row">
+			<div class="col-sm-9 ">
+				<h3>search your tickets</h3>
+			</div>
+		</div>
+	</div>
+		</div>
+	<div class="panel-body">
+								<div class="form-group"
+							<input ng-model="search.sid" type="hidden" /> 
+						 <label
+								class="col-sm-1 control-label">departure</label>
+															<div class="col-sm-5">
+								<div class="col-md-7">																										<!--Entrez le lieu de d¨¦part-->
+									<input type="text" class="form-control" id="search_departure"
+										 name="search_departure" ng-model="search.departure"
+										>
+										</div>
+								</div>
+								<label
+								class="col-sm-1 control-label">destination</label>
+							<div class="col-sm-5">
+								<div class="col-md-7">																									<!--Entrez le destination-->
+									<input type="text" class="form-control" id="search_destination"
+								 name="search_destination" ng-model="search.destination"
+										>
+								</div>
+							
+							<br></br>
+							</div>
+
+							 <label
+								class="col-sm-1 control-label">dateDepart</label>
+															<div class="col-sm-5">
+								<div class="col-md-6">																													<!--Entrez la date du d¨¦part-->
+									<input type="date" class="form-control" id="search_dateDepart"
+										 name="search_dateDepart" ng-model="search.dateDepart"
+										>
+								 </div>
+								</div>
+
+						 <label
+								class="col-sm-1 control-label">to</label>
+															<div class="col-sm-5">
+								<div class="col-md-6">																														<!--Entrez la date limite pour la date de d¨¦part-->
+									<input type="date" class="form-control" id="search_dateDepartTo"
+										 name="search_dateDepartTo" ng-model="search.dateDepartTo"
+										>
+								 </div>
+								</div>
+			<br/></b>
+									<div role="presentation" style="text-align:center"><span class="btn btn-primary "
+							 ng-click="submits();">Search</span></div>																					<!--button du recherche-->
+		
+		<hr class="divider">
+			<div class="panel-body scroll_bar">
+		<table class="table">
+			<thead>
+				<tr>																															<!--afficher les resultats du recherche-->
+					<th style="width: 5%">departure</th>
+					<th style="width: 11%">destination</th>
+					<th style="width: 10%">price</th>
+					<th style="width: 11%">timeDepart</th>
+					<th style="width: 10%">timeArrival</th>
+					<th style="width: 10%">dateDepart</th>
+					<th style="width: 10%">dateArrival</th>
+				</tr>
+			</thead>
+			<tbody id="tableContent">
+			
+			</tbody>
+		</table>
+	</div>
+	</div>
+</div>

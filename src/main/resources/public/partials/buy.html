@@ -1,0 +1,105 @@
+<!-- buy page -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<div class="row">
+			<div class="col-sm-9 ">
+				<h3>Buy tickets</h3>
+			</div>
+		</div>
+	</div>
+		</div>
+	<div class="panel-body">
+								<div class="form-group">
+							<input ng-model="ticket.tid" type="hidden" /> 
+						 <label
+								class="col-sm-1 control-label">departure</label>
+															<div class="col-sm-5">
+								<div class="col-md-7">
+										<label
+									class="control-label" >{{ticket.departure}}</label>    <!-- Connectez au backend pour obtenir des donn¨¦es-->
+										</div>
+								</div>
+								<label
+								class="col-sm-1 control-label">destination</label>
+							<div class="col-sm-5">
+								<div class="col-md-7">
+									<label
+									class="control-label">{{ticket.destination}}</label><!-- Connectez au backend pour obtenir des donn¨¦es-->
+										</div>
+								</div>
+							
+							<br></br>
+							</div>
+						 <label
+								class="col-sm-1 control-label">price</label>
+							<div class="col-sm-2">
+								<div class="col-md-11">
+									<label
+									class="control-label">{{ticket.price}}</label>					<!-- Connectez au backend pour obtenir des donn¨¦es-->
+								</div>
+							</div>
+							 <label
+								class="col-sm-1 control-label">reward</label>
+															<div class="col-sm-2">
+								<div class="col-md-11">
+									<label
+									class="control-label">{{ticket.reward}}</label>					<!-- Connectez au backend pour obtenir des donn¨¦es-->
+								</div>
+							</div>
+								<label
+								class="col-sm-1 control-label">seatNumber</label>
+							<div class="col-sm-2">
+								<div class="col-md-11">
+									<label
+									class="control-label">{{ticket.seatNumber}}</label>			<!-- Connectez au backend pour obtenir des donn¨¦es-->
+								</div>
+							</div>
+							 <label
+								class="col-sm-1 control-label">train No</label>
+															<div class="col-sm-2">
+								<div class="col-md-11">
+									<label
+									class="control-label">{{ticket.compartmentNumber}}</label>			<!-- Connectez au backend pour obtenir des donn¨¦es-->
+								</div>
+							<br></br>
+							</div>
+							 <label
+								class="col-sm-1 control-label">dateDepart</label>
+															<div class="col-sm-5">
+								<div class="col-md-6">
+									<label
+									class="control-label">{{ticket.dateDepart}}</label>						<!-- Connectez au backend pour obtenir des donn¨¦es-->
+								 </div>
+								</div>
+								<label
+								class="col-sm-1 control-label">dateArrival</label>
+															<div class="col-sm-5">
+								<div class="col-md-6">
+									<label
+									class="control-label">{{ticket.dateArrival}}</label>					<!-- Connectez au backend pour obtenir des donn¨¦es-->
+								</div>
+							<br></br>
+							</div>
+						 <label
+								class="col-sm-1 control-label">timeDepart</label>
+															<div class="col-sm-5">
+								<div class="col-md-6">
+									<label
+									class="control-label">{{ticket.timeDepart}}</label>						<!-- Connectez au backend pour obtenir des donn¨¦es-->
+								 </div>
+								</div>
+								 <label
+								class="col-sm-1 control-label">timeArrival</label>
+															<div class="col-sm-5">
+								<div class="col-md-6">
+									<label
+									class="control-label">{{ticket.timeArrival}}</label>						<!-- Connectez au backend pour obtenir des donn¨¦es-->
+								</div>
+							</div>
+			<br/></b>
+									<div role="presentation" style="text-align:center"><span class="btn btn-primary "
+							 ng-click="buy();">Acheter</span></div>															<!-- Cliquez pour g¨¦n¨¦rer une commande-->
+		
+		<hr class="divider">
+	</div>
+</div>

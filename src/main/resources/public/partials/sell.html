@@ -1,0 +1,114 @@
+<!-- sell page -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<div class="row">
+			<div class="col-sm-9 ">
+				<h3>Sell your tickets</h3>
+			</div>
+		</div>
+	</div>
+		</div>
+	<div class="panel-body">
+								<div class="form-group">
+							<input ng-model="sell.seller" type="hidden" />
+						 <label
+								class="col-sm-1 control-label">departure</label>
+															<div class="col-sm-5">
+								<div class="col-md-7">																											<!--Entrez le lieu de départ-->
+									<input type="text" class="form-control" id="sell_departure"
+										name="sell_departure" ng-model="sell.departure"
+										>
+										</div>
+								</div>
+								<label
+								class="col-sm-1 control-label">destination</label>
+							<div class="col-sm-5">
+								<div class="col-md-7">																											<!--Entrez la lin-->
+									<input type="text" class="form-control" id="sell_destination"
+										name="sell_destination" ng-model="sell.destination"
+										>
+								</div>
+							
+							<br></br>
+							</div>
+						 <label
+								class="col-sm-1 control-label">price</label>																<!--Entrez le price-->
+							<div class="col-sm-2">
+								<div class="col-md-11">
+									<input type="text" class="form-control" id="sell_price"
+										name="sell_price" ng-model="sell.price"
+										>
+								</div>
+							</div>
+							 <label
+								class="col-sm-1 control-label">reward</label>
+															<div class="col-sm-2">
+								<div class="col-md-11">																											<!--Entrez le reward-->
+									<input type="text" class="form-control" id="sell_reward"
+										name="sell_reward" ng-model="sell.reward"
+										>
+								</div>
+							</div>
+								<label
+								class="col-sm-1 control-label">seatNumber</label>														<!--Entrez le numéro de siège-->
+							<div class="col-sm-2">
+								<div class="col-md-11">
+									<input type="text" class="form-control" id="sell_seatNumber"
+										name="sell_seatNumber" ng-model="sell.seatNumber"
+										>
+								</div>
+							</div>
+							 <label
+								class="col-sm-1 control-label">train No</label>
+															<div class="col-sm-2">
+								<div class="col-md-11">																											<!--Entrez le numéro du train-->
+									<input type="text" class="form-control" id="sell_compartmentNumber"
+										name="sell_compartmentNumber" ng-model="sell.compartmentNumber"
+										>
+								</div>
+							<br></br>
+							</div>
+							 <label
+								class="col-sm-1 control-label">dateDepart</label>														<!--Entrez la date du départ-->
+															<div class="col-sm-5">
+								<div class="col-md-6">
+									<input type="date" class="form-control" id="sell_dateDepart"
+										name="sell_dateDepart" ng-model="sell.dateDepart"
+										>
+								 </div>
+								</div>
+								<label
+								class="col-sm-1 control-label">dateArrival</label>
+															<div class="col-sm-5">																					<!--Entrez la date du fin-->
+								<div class="col-md-6">
+									<input type="date" class="form-control" id="sell_dateArrival"
+										name="sell_dateArrival" ng-model="sell.dateArrival"
+										>
+								</div>
+							<br></br>
+							</div>
+						 <label
+								class="col-sm-1 control-label">timeDepart</label>																		<!--Entrez le temps du départ-->
+															<div class="col-sm-5">
+								<div class="col-md-6">
+									<input type="text" class="form-control" id="sell_timeDepart"
+										name="sell_timeDepart" ng-model="sell.timeDepart"
+										>
+								 </div>
+								</div>
+								 <label
+								class="col-sm-1 control-label">timeArrival</label>
+															<div class="col-sm-5">																								<!--Entrez la date du fin-->
+								<div class="col-md-6">
+									<input type="text" class="form-control" id="sell_timeArrival"
+										name="sell_timeArrival" ng-model="sell.timeArrival"
+										>
+								</div>
+							</div>
+			<br/></b>
+									<div role="presentation" style="text-align:center"><span class="btn btn-primary "
+							 ng-click="submits();">Déposer</span></div>																									<!--button du vendu-->
+		
+		<hr class="divider">
+	</div>
+</div>
